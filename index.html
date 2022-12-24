@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checking grade app</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        max-width: 960px;
+        margin: 0 auto;
+        line-height: 1.5;
+      }
+
+      #info {
+        max-width: 400px;
+      }
+      #result {
+        max-width: 400px;
+        margin-top: 40px;
+        border-left: 6px solid forestgreen;
+        padding: 20px;
+        background: rgb(64, 212, 101);
+        color: yellow;
+        display: none;
+      }
+    </style>
+    <div id="wrapper">
+      <form action="" id="info">
+        <fieldset>
+          <legend>Xếp loại học sinh</legend>
+          <label for="name">Tên học sinh</label><br />
+          <input type="text" name="student" id="name" /><br />
+          <label for="mark">Điểm số</label><br />
+          <input type="text" name="mark" id="mark" /><br /><br />
+          <input type="submit" value="Kiểm tra" />
+        </fieldset>
+      </form>
+      <div id="result">
+        Tên: <b>A</b>
+        <br />
+        Điểm trung bình: <b>8</b>
+        <br />
+        Xếp loại: <b>Giỏi</b>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
